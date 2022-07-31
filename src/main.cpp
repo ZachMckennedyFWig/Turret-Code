@@ -1,12 +1,4 @@
 #include "vex.h"
-#include <string>
-#include <array>
-#include <iostream>
-#include <fstream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <cstdlib>
-#include <math.h>
 
 #include "RobotParameters/parameters.h"
 #include "Structures/structures.h"
