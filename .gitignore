@@ -1,3 +1,4 @@
 /.vscode
-/compile_commands.json
-/makefile
+/bin
+/build
+compile_commands.json

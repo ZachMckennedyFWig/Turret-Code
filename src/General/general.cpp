@@ -1,28 +1,18 @@
 #include "general.h"
 #include "vex.h"
-#include "../../Structures/structures.h"
 
 /*
 Basic functions for moving around the robot and debugging.  
 */
 
 using namespace vex;
-
-// Function to reset all the drive encoders 
-void reset_encoders()
-{
-  lf.resetRotation();
-  lb.resetRotation();
-  rf.resetRotation();
-  rb.resetRotation();
-}
-
+ 
 // Fucntion to get the drive encoder values in the Encoder struct format
 Encoder get_drive_encoder()
 {
   Encoder temp;
-  temp.left = lf.rotation(degrees);
-  temp.right = rf.rotation(degrees);
+  temp.left = left_tracker.rotation(rotationUnits::deg);
+  temp.right = right_tracker.rotation(rotationUnits::deg);
   return temp;
 }
 

@@ -15,6 +15,10 @@ extern motor flywheel1;
 extern motor flywheel2;
 extern motor hood;
 
+extern encoder left_tracker;
+extern encoder right_tracker;
+
+
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.
  * 

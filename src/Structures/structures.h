@@ -9,8 +9,6 @@ struct Position
 	double x, y, theta, turret_ang, target_ang, target_dis;
 };
 
-Position latency_positions[3]; 
-
 // Structure to store the encoder values
 struct Encoder
 {
@@ -20,14 +18,19 @@ struct Encoder
 struct Camera
 {
   int x,y;
-}cam;
+};
 
 struct Turret
 {
-  double speed = 0.0;
-  double target_angle = 0.0;
-  double dis = 0.0;
-}tur;
+  double speed;
+  double target_angle;
+  double dis;
+  double tof_ang;
+};
 
+extern Turret tur;
+extern Camera cam; 
+extern Position latency_positions[3];
+extern Position glob_pos;
 
 #endif

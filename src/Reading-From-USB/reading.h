@@ -1,10 +1,10 @@
 #ifndef reading_H
 #define reading_H
 
+//using namespace std;
 #include <string>
 
-using namespace std;
-extern string combine_char(char words[]);
+std::string combine_char(char words[]);
 extern int Read_Loop();
 
 #endif

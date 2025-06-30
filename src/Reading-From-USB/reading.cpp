@@ -1,8 +1,8 @@
 #include "reading.h"
 #include "vex.h"
 
-#include "../../RobotParameters/parameters.h"
-#include "../../Structures/structures.h"
+#include "../RobotParameters/parameters.h"
+#include "../Structures/structures.h"
 #include "../General/general.h"
 
 using namespace std;

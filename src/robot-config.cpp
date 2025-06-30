@@ -19,6 +19,8 @@ motor indexer = motor(PORT17, ratio6_1, false);
 motor flywheel1 = motor(PORT18, ratio6_1, true);
 motor flywheel2 = motor(PORT19, ratio6_1, false);
 motor hood = motor(PORT20, ratio6_1, true);
+encoder left_tracker = encoder(Brain.ThreeWirePort.E);
+encoder right_tracker = encoder(Brain.ThreeWirePort.G);
 
 // VEXcode generated functions
 // define variable for remote controller enable/disable
